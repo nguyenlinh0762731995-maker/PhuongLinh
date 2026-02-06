@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Phố Đà Nẵng - Việt Nam</title>
+    <meta name="description" content="Website giới thiệu về thành phố Đà Nẵng - Thành phố đáng sống nhất Việt Nam">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Vietnamese:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>ĐÀ NẴNG</h1>
+                <p>Thành phố đáng sống</p>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#intro" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="#tourism" class="nav-link">Du lịch</a></li>
+                    <li><a href="#cuisine" class="nav-link">Ẩm thực</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">CHÀO MỪNG ĐẾN ĐÀ NẴNG</h2>
+            <p class="hero-subtitle">Thành phố của những cây cầu và bãi biển tuyệt đẹp</p>
+            <a href="#intro" class="hero-btn">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section intro-section">
+        <div class="container">
+            <h2 class="section-title">Giới Thiệu Thành Phố Đà Nẵng</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Đà Nẵng là một thành phố trực thuộc trung ương, nằm trong vùng Duyên hải Nam Trung Bộ Việt Nam. Thành phố này là đô thị loại I và là trung tâm kinh tế, chính trị, văn hóa, giáo dục, khoa học và công nghệ của khu vực miền Trung - Tây Nguyên.</p>
+                    
+                    <h3>Đặc điểm nổi bật:</h3>
+                    <ul class="feature-list">
+                        <li>Thành phố ven biển với bờ biển dài 30km</li>
+                        <li>Kết nối giao thông thuận lợi: đường bộ, đường sắt, đường hàng không và đường biển</li>
+                        <li>Khí hậu nhiệt đới gió mùa, nhiệt độ trung bình 25-26°C</li>
+                        <li>Dân số: khoảng 1.2 triệu người (2023)</li>
+                        <li>Diện tích: 1.285 km²</li>
+                    </ul>
+                </div>
+                
+                <div class="intro-image">
+                    <div class="image-placeholder" id="cityImage">
+                        <!-- Image will be loaded via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourism Section -->
+    <section id="tourism" class="section tourism-section">
+        <div class="container">
+            <h2 class="section-title">Điểm Du Lịch Nổi Bật</h2>
+            <p class="section-subtitle">Khám phá những địa điểm không thể bỏ qua khi đến Đà Nẵng</p>
+            
+            <div class="tourism-grid">
+                <div class="tourism-card">
+                    <div class="card-image" id="tourismImage1"></div>
+                    <div class="card-content">
+                        <h3>Bà Nà Hills</h3>
+                        <p>Khu du lịch nghỉ dưỡng nổi tiếng với cáp treo dài nhất thế giới và Làng Pháp thu nhỏ. Nhiệt độ mát mẻ quanh năm, phù hợp cho nghỉ dưỡng và giải trí.</p>
+                        <button class="card-btn" data-location="Bà Nà Hills">Xem thêm</button>
+                    </div>
+                </div>
+                
+                <div class="tourism-card">
+                    <div class="card-image" id="tourismImage2"></div>
+                    <div class="card-content">
+                        <h3>Cầu Rồng</h3>
+                        <p>Biểu tượng của Đà Nẵng, cây cầu độc đáo có hình con rồng vàng. Vào cuối tuần, cầu có màn trình diễn phun lửa và phun nước thu hút du khách.</p>
+                        <button class="card-btn" data-location="Cầu Rồng">Xem thêm</button>
+                    </div>
+                </div>
+                
+                <div class="tourism-card">
+                    <div class="card-image" id="tourismImage3"></div>
+                    <div class="card-content">
+                        <h3>Bãi biển Mỹ Khê</h3>
+                        <p>Được tạp chí Forbes bình chọn là một trong những bãi biển quyến rũ nhất hành tinh. Cát trắng mịn, nước biển trong xanh, hoàng hôn tuyệt đẹp.</p>
+                        <button class="card-btn" data-location="Bãi biển Mỹ Khê">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuisine Section -->
+    <section id="cuisine" class="section cuisine-section">
+        <div class="container">
+            <h2 class="section-title">Ẩm Thực Đà Nẵng</h2>
+            <p class="section-subtitle">Những món ngon đặc sản không thể bỏ lỡ</p>
+            
+            <div class="cuisine-grid">
+                <div class="cuisine-card">
+                    <div class="cuisine-icon">
+                        <span>🍜</span>
+                    </div>
+                    <h3>Mì Quảng</h3>
+                    <p>Món ăn đặc trưng của miền Trung với sợi mì vàng, nước dùng đậm đà, thịt gà/tôm, rau sống và bánh tráng.</p>
+                </div>
+                
+                <div class="cuisine-card">
+                    <div class="cuisine-icon">
+                        <span>🦐</span>
+                    </div>
+                    <h3>Hải Sản</h3>
+                    <p>Đà Nẵng nổi tiếng với hải sản tươi sống: tôm, cua, mực, cá... chế biến đa dạng từ nướng, hấp đến sốt.</p>
+                </div>
+                
+                <div class="cuisine-card">
+                    <div class="cuisine-icon">
+                        <span>🥣</span>
+                    </div>
+                    <h3>Bún Chả Cá</h3>
+                    <p>Món bún với chả cá Đà Nẵng thơm ngon, nước dùng thanh ngọt từ xương cá, ăn kèm rau sống và bánh tráng.</p>
+                </div>
+                
+                <div class="cuisine-card">
+                    <div class="cuisine-icon">
+                        <span>🥮</span>
+                    </div>
+                    <h3>Bánh Tráng Cuốn</h3>
+                    <p>Đặc sản đường phố với bánh tráng cuốn thịt heo, rau sống, chấm mắm nêm đặc trưng miền Trung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ</h2>
+            <p class="section-subtitle">Để biết thêm thông tin về Đà Nẵng</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <strong>Địa chỉ:</strong>
+                            <p>Thành phố Đà Nẵng, Việt Nam</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-text">
+                            <strong>Email:</strong>
+                            <p>info@danangcity.vn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <strong>Điện thoại:</strong>
+                            <p>+84 236 1234 567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-text">
+                            <strong>Website chính thức:</strong>
+                            <p>www.danang.gov.vn</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Gửi Tin Nhắn</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Họ và tên" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Chủ đề">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ĐÀ NẴNG</h3>
+                    <p>Thành phố đáng sống nhất Việt Nam</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#intro">Giới thiệu</a></li>
+                        <li><a href="#tourism">Du lịch</a></li>
+                        <li><a href="#cuisine">Ẩm thực</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">YT</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Website Giới Thiệu Đà Nẵng. Dự án bài tập đại học.</p>
+                <p>Thiết kế bởi Sinh viên - Môn học: Phát triển Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
